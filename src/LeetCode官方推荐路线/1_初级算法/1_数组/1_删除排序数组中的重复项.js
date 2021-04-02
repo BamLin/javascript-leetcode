@@ -28,3 +28,10 @@ var removeDuplicates = function(nums) {
 };
 
 
+// 其实去重的话  用 JS 的原生API 比较方便
+var removeDuplicatesWithAPI = function (nums) {
+    return Array.from(new Set(nums));
+}
+
+// [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+console.log(removeDuplicatesWithAPI([1,2,2,3,3,3,3,4,5,6,6,7,7,8]))
